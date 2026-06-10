@@ -60,5 +60,11 @@ public class Program {
         System.out.println("===== TEST 8: department findById =====");
         department = departmentDao.findById(1);
         System.out.println(department);
+
+        System.out.println("===== TEST 9: department delete =====");
+        System.out.println("Enter id for delete test: ");
+        int id = sc.nextInt();
+        departmentDao.deleteById(id);
+        System.out.println("Delete completed");
     }
 }
