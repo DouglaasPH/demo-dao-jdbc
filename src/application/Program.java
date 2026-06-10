@@ -39,7 +39,7 @@ public class Program {
         sellerDao.insert(newSeller);
         System.out.println("Inserted! New id = " + newSeller.getId());
 
-        //System.out.println("===== TEST 5: seller insert =====");
+        //System.out.println("===== TEST 5: seller update =====");
         //seller = sellerDao.findById(1);
         //seller.setName("Martha Waine");
         //sellerDao.update(seller);
@@ -66,5 +66,11 @@ public class Program {
         int id = sc.nextInt();
         departmentDao.deleteById(id);
         System.out.println("Delete completed");
+
+        System.out.println("===== TEST 10: department update =====");
+        department = departmentDao.findById(2);
+        department.setName("Music");
+        departmentDao.update(department);
+        System.out.println("Update completed");
     }
 }
