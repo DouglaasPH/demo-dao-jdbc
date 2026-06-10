@@ -56,5 +56,9 @@ public class Program {
         for (Department obj : listDep) {
             System.out.println(obj);
         }
+
+        System.out.println("===== TEST 8: department findById =====");
+        department = departmentDao.findById(1);
+        System.out.println(department);
     }
 }
